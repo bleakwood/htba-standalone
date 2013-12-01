@@ -1,11 +1,8 @@
 angular.module('htbaStandaloneApp')
   .controller('DropdownCtrl', ['$scope',  function($scope) {
   $scope.items = [
-    "15 minutes",
-    "30 minutes",
-    "60 minutes"
+    {name: "15 minutes", length: 15},
+    {name: "30 minutes", length: 30},
+    {name: "60 minutes", length: 60}
   ];
-  $scope.debugclick = function() {
-  	console.log("clicked");
-  };
 }]);

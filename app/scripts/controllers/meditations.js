@@ -1,10 +1,6 @@
 'use strict';
 
 angular.module('htbaStandaloneApp')
-  .controller('MeditationsCtrl', ['$scope', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MeditationsCtrl', ['$scope', '$route', '$routeParams', function ($scope, $route, $routeParams) {
+  	$scope.medLength = $routeParams.medLength;
   }]);

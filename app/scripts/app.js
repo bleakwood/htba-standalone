@@ -15,8 +15,8 @@ angular.module('htbaStandaloneApp', [
         templateUrl: 'views/dashboard.html',
         controller: 'FeelingsCtrl'
       })
-      .when('/meditate', {
-        templateUrl: 'views/dashboard.html',
+      .when('/meditate/:medLength', {
+        templateUrl: 'views/meditate.html',
         controller: 'MeditationsCtrl'
       })
       .otherwise({
