@@ -3,7 +3,7 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 @import 'sass-bootstrap/lib/bootstrap';
 
 body{
-    background-color: #a8391b;
+    background-color: black;
 
 }
 .span5{
@@ -18,8 +18,8 @@ body{
 }
 #emotion_button{
     margin: 0 auto;
-    margin-top: 310px;
     margin-left: 50px;
+    padding-top: 350px;
 }
 .btn-primary{
     margin-bottom: 60px;
@@ -54,7 +54,8 @@ body{
     margin-top: 50px;
 }
 #first_button{
-    margin-top: 60px;
+    margin-top: 360px;
+
 }
 #dashboard{
         background: url(/images/second_page.gif) no-repeat;
@@ -73,4 +74,32 @@ body{
 }
 #view{
     font-size: 18px;
+}
+#meditate{
+    background: url(/images/timer.gif) no-repeat;
+        background-size:320px 568px;
+    height:568px;
+    width: 320px;
+    font-size: 24px;
+}
+.contaniner{
+    padding: 0 !important;
+        margin: 0 !important;
+
+}
+.timer{
+    padding-top: 140px;
+    padding-left: 90px;
+    font-size: 18px;
+    color: white;
+}
+#stop{
+    padding-left: 60px;
+    padding-top: 50px;
+    font-size: 24px;
+}
+#continue{
+        font-size: 24px;
+    padding-top: 50px;
+
 }
