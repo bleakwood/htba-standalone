@@ -1,0 +1,9 @@
+<div class='span5' id="home_page" ng-controller="FeelingsCtrl">
+  <h1> {{heading}} </h1>
+  <h2>How do you feel now?</h2>
+  <div id="emotion_button">
+    <span ng-repeat="f in feelings">
+       <button ng-click="selectFeeling(f)" class="btn btn-lg btn-primary">{{f.name}}</button>
+     </span>
+  </div>
+</div>

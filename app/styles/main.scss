@@ -1,0 +1,58 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+body{
+    background-color: #a8391b;
+
+}
+.span5{
+    background-color: black;
+}
+#home_page{
+    background: url(/images/homepage.jpg) no-repeat;
+    background-size:320px 568px;
+    height:568px;
+    width: 320px;
+
+}
+#emotion_button{
+    margin: 0 auto;
+    margin-top: 310px;
+    margin-left: 50px;
+}
+.btn-primary{
+    margin-bottom: 60px;
+    background-color:transparent;
+    z-index:-999;
+    font-size: 12px;
+    border: none;
+}
+ .btn-default{
+    background-color:transparent;
+        font-size: 12px;
+            border: none;
+            color: white;
+
+
+}
+ .btn-success{
+    background-color:transparent;
+        font-size: 12px;
+            border: none;
+}
+#normal{
+    margin-left: 10px;
+}
+#sad{
+    margin-left: 15px;
+}
+#second_button{
+    margin-top: 70px;
+}
+#third_button{
+    margin-top: 50px;
+}
+#first_button{
+    margin-top: 60px;
+}
