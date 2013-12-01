@@ -16,6 +16,10 @@ body{
     width: 320px;
 
 }
+#thoughts{
+    margin-left: 40px;
+    margin-top: 70px;
+}
 #emotion_button{
     margin: 0 auto;
     margin-left: 50px;
@@ -102,4 +106,25 @@ body{
         font-size: 24px;
     padding-top: 50px;
 
+}
+#meditate-time-up{
+
+      background: url(/images/thought.gif) no-repeat;
+        background-size:320px 568px;
+    height:568px;
+    width: 320px;
+    font-size: 24px;
+}
+#stoptime{
+    padding-top: 30px;
+    padding-left: 50px !important;
+}
+.btn-timeup{
+    margin-top: 35px;
+}
+#save{
+    margin-left: 80px;
+}
+#cancel{
+    margin-left: 40px;
 }

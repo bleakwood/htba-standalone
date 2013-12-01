@@ -1,11 +1,6 @@
 <div id="meditate-time-up" ng-controller="meditationsTimeupController">
-    <div class="timer"> Congratulations! You have meditated for {{timer_min}} minutes and {{timer_sec}} seconds. </div>
-    <h1> 
-        How are you feeling now?
-    </h1>
-    <div id="emotion_button">
-        <span ng-repeat="f in feelings">
-           <button ng-click="selectFeeling(f)" class="btn btn-lg btn-primary">{{f.name}}</button>
-         </span>
-    </div>
+    <div id="stoptime" class="timer"> Congratulations! You have meditated for {{timer_min}} minutes and {{timer_sec}} seconds. </div>
+    <textarea id="thoughts" name="string" ng-model="thoughts.text"></textarea>
+    <button id="save" class="btn btn-lg btn-primary btn-timeup" ng-click="saveThoughts()">Save</button>
+    <button id="cancel" class="btn btn-lg btn-primary btn-timeup" ng-click="cancelThoughts()">Cancel</button>
 </div>
