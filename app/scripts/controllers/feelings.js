@@ -25,11 +25,12 @@ angular.module('htbaStandaloneApp')
 	$scope.feeling = $scope.feelings[0];
 	$scope.selectFeeling = function(f) {
 		$scope.newFeeling = { feeling_desc: f.name };
-		// $scope.newFeeling.feeling_desc = f.name;
-		$location.path( '/dashboard' );
-		// Feeling.save($scope.newFeeling, function(resource) {
-	 //    }, function(response) {
-	 //      console.log('Error: ' + response.status);
-	 //    });
+		$scope.newFeeling.feeling_desc = f.name;
+		Feeling.save($scope.newFeeling, function(resource) {
+			console.log(resource);
+			$location.path( '/dashboard' );
+		}, function(response) {
+	      console.log('Error: ' + response.status);
+	    });
 	};
 }]);

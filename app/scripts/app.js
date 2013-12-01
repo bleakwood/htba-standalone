@@ -2,7 +2,8 @@
 
 angular.module('htbaStandaloneApp', [
   'ngResource',
-  'ngRoute'
+  'ngRoute',
+  'ui.bootstrap'
 ])
   .config(['$routeProvider', function ($routeProvider) {
     $routeProvider
@@ -13,6 +14,10 @@ angular.module('htbaStandaloneApp', [
       .when('/dashboard', {
         templateUrl: 'views/dashboard.html',
         controller: 'FeelingsCtrl'
+      })
+      .when('/meditate', {
+        templateUrl: 'views/dashboard.html',
+        controller: 'MeditationsCtrl'
       })
       .otherwise({
         redirectTo: '/'

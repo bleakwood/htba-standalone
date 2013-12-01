@@ -1,3 +1,13 @@
-<button class="btn btn-lg btn-primary">Medidate</button>
-
-<button class="btn btn-lg btn-primary">View history</button>
+<div id="dashboard">
+	<div id="dash_button">
+		<div class="dropdown" ng-controller="DropdownCtrl">
+		  <button class="btn btn-lg btn-primary dropdown-toggle" id="med">Medidate</button>
+		  <ul class="dropdown-menu">
+		    <li ng-repeat="choice in items">
+		      <a>{{choice}}</a>
+		    </li>
+		  </ul>
+		</div>
+		<button class="btn btn-lg btn-primary" id= "view">View history</button>
+	</div>
+</div>
