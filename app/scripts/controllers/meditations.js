@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('htbaStandaloneApp')
-  .controller('MeditationsCtrl', ['$scope', '$routeParams', '$timeout', function ($scope, $routeParams, $timeout) {
+  .controller('MeditationsCtrl', ['$scope', '$rootScope','$routeParams', '$timeout', '$location', function ($scope, $rootScope, $routeParams, $timeout, $location) {
   	$scope.medLength = $routeParams.medLength;
 
   	$scope.counter = 0;
@@ -12,8 +12,10 @@ angular.module('htbaStandaloneApp')
         $scope.counter++;
         $scope.timer_min = ~~($scope.counter / 60);
         $scope.timer_sec = $scope.counter % 60;
-        // if($scope.timer_min === $scope.medLength)
-
+        if($scope.timer_min === $scope.medLength){
+        	$rootScope.timeCount = $scope.counter;
+        	$location.path( '/meditate_timeup' );
+        }
         if($scope.timer_sec < 10){
         	$scope.timer_placeholder = '0';
         }
@@ -27,6 +29,8 @@ angular.module('htbaStandaloneApp')
     	console.log($scope.medLength * 60);
     	console.log($scope.counter);
     	$timeout.cancel(mytimeout);
+    	$rootScope.timeCount = $scope.counter;
+    	$location.path('/meditate_timeup');
     }
 
   }]);

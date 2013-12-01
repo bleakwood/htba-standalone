@@ -1,8 +1,5 @@
-<div class="modal-header">
-    <h3>I'm a modal!</h3>
-</div>
-<textarea ng-model="text"></textarea>
-<div class="modal-footer">
-    <button class="btn btn-primary" ng-click="ok()">OK</button>
-    <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+<div id="meditate-time-up" ng-controller="MeditationsCtrl">
+    <div class="timer"> Congratulations! You have meditated for {{timeCount}}. </div>
+    <button class="btn btn-lg btn-primary" ng-click="stopTimer()">Stop</button>
+    <button class="btn btn-lg btn-primary" ng-click="continueMeditation()">Continue</button>
 </div>
