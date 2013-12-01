@@ -1,0 +1,12 @@
+<div id="dashboard">
+	<div>
+		<li ng-repeat="med in meditations">
+			<div>Date: {{med.created_at.split("T")[0];}}</div>
+		    <div>Duration: {{med.duration}} seconds</div>
+		    <div>Thoughts: {{med.thoughts}}</div>
+		</li>
+	</div>
+	<a href="#/dashboard">
+		<button class="btn btn-lg btn-primary btn-back" id= "view">Go Back</button>
+	</a>
+</div>

@@ -23,6 +23,10 @@ angular.module('htbaStandaloneApp', [
         templateUrl: 'views/meditationTimeup.html',
         controller: 'meditationsTimeupController'
       })
+      .when('/history', {
+        templateUrl: 'views/lastMeditations.html',
+        controller: 'LastmeditationcontrollerCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
