@@ -26,8 +26,6 @@ angular.module('htbaStandaloneApp')
     var mytimeout = $timeout($scope.onTimeout,1000);
 
     $scope.stopTimer = function() {
-    	console.log($scope.medLength * 60);
-    	console.log($scope.counter);
     	$timeout.cancel(mytimeout);
     	$rootScope.timeCount = $scope.counter;
     	$location.path('/meditate_timeup');
